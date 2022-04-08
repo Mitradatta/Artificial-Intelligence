@@ -24,6 +24,19 @@ Important Functions to understand in the code:
 ```
 public static int minmax (int[][]a,boolean ismaximizing)
 {
+      .
+      .
+      .
+}
+```
+
+**minmax()** function returns the bestscore for each move
+- The input of the function of is **"current state"** of the tictactoe game and **"boolean value(**True** or **False**)"** of the current player i.e is the player trying to maximize the score or minimize the score?
+
+
+```
+public static int minmax (int[][]a,boolean ismaximizing)
+{
 
       if(wincheck(a)==1){
           return 100;
@@ -72,22 +85,40 @@ public static int minmax (int[][]a,boolean ismaximizing)
           }
       return bestscore;
       }
-      .
-      .
-      .
-      .
-      .
-      .
+      
+      else
+      {
+          bestscore=10000;
+          for (int i = 0; i < 3; i++)
+          {
+	   for (int j = 0; j < 3; j++)
+	   {
+	     if (a[i][j] == -1)
+	     {
+		a[i][j] = 0;
+		score = minmax(a,true);
+                a[i][j] = -1;
+                if (score<bestscore)
+		  {
+                   bestscore = score;
+		  }
+	     }
+	   }
+          }
+      return bestscore;
+      }
+
 }
 ```
-**minmax()** function returns the bestscore for each move
-- The input of the function of is **"current state"** of the tictactoe game and **"boolean value(**True** or **False**)"** of the current player i.e is the player trying to maximize the score or minimize the score?
+- If the current player is trying to maximize the score, then we will place **"X"** in the position that produces the highest value for **"MIN"** of current state.
 
+- If the current player is trying to minimize the score, then we will place **"O"** in the position that produces the minimum value for **"MAX"** of the current state
 
 
 ## Example of Tic-Tac-Toe Game Tree
 <p align = "center">
-<img width="1049" alt="Screenshot 2022-04-08 at 1 57 15 PM" src="https://user-images.githubusercontent.com/54971204/162401439-5537ffab-701e-4676-ad58-98e00af14f79.png">
+ <img width="985" alt="Screenshot 2022-04-08 at 7 47 21 PM" src="https://user-images.githubusercontent.com/54971204/162454481-0e268ba1-742f-4a3b-8b10-681d94e20e92.png">
+
 </p>
 
 
