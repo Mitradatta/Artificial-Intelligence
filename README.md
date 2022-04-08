@@ -180,6 +180,8 @@ java --version
 - YouTube video:https://youtu.be/pxi3iIy4F5A
 - Website: [JavaWebsite](https://docs.oracle.com/javase/10/install/installation-jdk-and-jre-linux-platforms.htm#JSJIG-GUID-A35B89D1-7EBB-4463-B293-55C8E9713357)
 
+- After downloading the software, you can clone repository to download the zip file.
+
 This repository contains two source code files
 
 - **start.java**: This file contains the code that displays the first page, where you can select which player can start the game i.e either **Player** or **Computer**
