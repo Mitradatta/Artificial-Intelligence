@@ -127,8 +127,6 @@ public static int minmax (int[][]a,boolean ismaximizing)
 
 
 
-## References
-- Book: Artificial Intelligence: A Modern Approach by Peter Norvig and Stuart J. Russell
 
 
 ## How to Run the Code?
@@ -143,6 +141,15 @@ This repository contains two source code files
 Download both the files including images and run the file  **start.java**
 
 
+
+
+
+
+
+
+## References
+- Book: Artificial Intelligence: A Modern Approach by Peter Norvig and Stuart J. Russell
+- Website: https://cdn.cs50.net/ai/2020/spring/lectures/0/lecture0.pdf
 
 
 
