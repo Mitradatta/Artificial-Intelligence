@@ -2,7 +2,7 @@
 
 
 <p align="center">
-<img width="912" alt="Screenshot 2022-04-07 at 10 30 02 PM" src="https://user-images.githubusercontent.com/54971204/162359027-b7bbca33-815a-469e-ac5f-0e1ae91ad0f5.png">
+<img width="700" alt="Screenshot 2022-04-07 at 10 30 02 PM" src="https://user-images.githubusercontent.com/54971204/162359027-b7bbca33-815a-469e-ac5f-0e1ae91ad0f5.png">
 </p>
 
 
@@ -122,10 +122,37 @@ public static int minmax (int[][]a,boolean ismaximizing)
 </p>
 
 
+## Screenshots of played Game:
 
+If **"Computer"** starts the game i.e first move is made by **"X"** . 
 
+<p align="center">
+	<img width="500" alt="Screenshot 2022-04-07 at 10 30 14 PM" src="https://user-images.githubusercontent.com/54971204/162490594-5f0069f7-086c-4081-96d0-4ca6520a00f5.png">
 
+</p>
 
+Then second move is made by opponent player i.e by **"O"** .
+
+<p align = "center">
+	<img width="500" alt="Screenshot 2022-04-07 at 10 30 44 PM" src="https://user-images.githubusercontent.com/54971204/162491208-c56c02b9-c24b-41dc-84f2-5b4eebc7fcba.png">
+
+</p>
+	
+
+And so on,
+
+<p align = "center">
+	<img width="500" alt="Screenshot 2022-04-07 at 10 30 51 PM" src="https://user-images.githubusercontent.com/54971204/162491605-33101e2c-7627-435a-9ec0-f455bb7eef4e.png">
+</p>
+
+Finally, **X** Wins! i.e Computer wins the Game.
+
+<p align = "center">
+	<img width="500" alt="Screenshot 2022-04-07 at 10 31 01 PM" src="https://user-images.githubusercontent.com/54971204/162491686-0755b8c1-aa46-42c6-9c05-8cc53cb2f8f1.png">
+</p>	
+
+## Results and Conclusion
+- As you can see that if **"Computer"** starts the game, then there are always 2 possibilities that the game can end for the opponent player either  **"Draw"** or player **"Loses"** , because the computer always makes an optimal move in each step of the game, therfore making it impossible for opponent player to **"Win"**. 
 
 
 
