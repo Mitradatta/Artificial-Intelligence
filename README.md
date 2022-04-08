@@ -131,6 +131,28 @@ public static int minmax (int[][]a,boolean ismaximizing)
 
 ## How to Run the Code?
 
+- If you dont' have the **Java** software already, you can dowload the Standard Edition(SE) from [here](https://www.oracle.com/java/technologies/downloads/) by following the step by step instructions.
+- Once you have downloaded the software, to ensure that you have downloaded the software correctly you can verify in the "Terminal" if you are using Linux or in "Command prompt" if you are using Windows. 
+- Using the below code you can check the software version and can also see whether it is installed on your laptop or PC.
+
+```
+java --version
+```
+### Demo output
+<p>
+	<img width="569" alt="Screenshot 2022-04-08 at 10 11 13 PM" src= "https://user-images.githubusercontent.com/54971204/162488088-b2d69aaa-5123-45df-ada9-118ecf98dad7.png">
+
+</p>
+
+- If you are getting an error, download the software again usign the resources below:
+### If you are using Windows,
+- YouTube video:https://youtu.be/IJ-PJbvJBGs
+- Website: [JavaWebsite](https://docs.oracle.com/javase/10/install/installation-jdk-and-jre-microsoft-windows-platforms.htm#JSJIG-GUID-61460339-5500-40CC-9006-D4FC3FBCFC0D)
+
+### If you are using Mac,
+- YouTube video:https://youtu.be/pxi3iIy4F5A
+- Website: [JavaWebsite](https://docs.oracle.com/javase/10/install/installation-jdk-and-jre-linux-platforms.htm#JSJIG-GUID-A35B89D1-7EBB-4463-B293-55C8E9713357)
+
 This repository contains two source code files
 
 - **start.java**: This file contains the code that displays the first page, where you can select which player can start the game i.e either **Player** or **Computer**
