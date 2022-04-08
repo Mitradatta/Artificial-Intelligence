@@ -3,7 +3,7 @@
 
 <p align="center">
 <img width="912" alt="Screenshot 2022-04-07 at 10 30 02 PM" src="https://user-images.githubusercontent.com/54971204/162359027-b7bbca33-815a-469e-ac5f-0e1ae91ad0f5.png">
- </p>
+</p>
 
 
 ## Introduction:
@@ -19,15 +19,76 @@ It is generally used in 2-player based games such as TicTacToe, Backgammon, Ches
 **Maximizer**:Maximizer or **MAX** player is a player, who always tries to get maximium score possible.
 
 
-## Understanding the Algorithm
+## Understanding the Code
+Important Functions to understand in the code:
 ```
-print("Hello Wolrd")
+public static int minmax (int[][]a,boolean ismaximizing)
+{
 
+      if(wincheck(a)==1){
+          return 100;
+      }
+      else if(wincheck(a)==2){
+          return -100;
+      }
+      else if(checkdraw()){
+          return 0;
+      }
+      . 
+      . 
+      .
+      .
+      .
+}
 ```
-## Example of a Game Tree
+- Checking the currrent state of TicTacToe game whether if any one of the palyer had already Won or Lost or a Draw.
+- If it is not satisfying any one of the above 3 conditions, then we continue to calculate the bestscore for current player.
+```
+public static int minmax (int[][]a,boolean ismaximizing)
+{
+      . 
+      . 
+      .
+      .
+      .
+      if(ismaximizing)
+      {
+          bestscore=-10000;
+          for (int i = 0; i < 3; i++)
+          {
+           	for (int j = 0; j < 3; j++)
+	           {
+	             if (a[i][j] == -1)
+	             {
+		              a[i][j] = 1;
+		              score = minmax(a,false);
+                a[i][j] = -1;
+		              if (score>bestscore)
+		              { 
+                  bestscore = score;
+		              }
+	             }
+	           }
+          }
+      return bestscore;
+      }
+      .
+      .
+      .
+      .
+      .
+      .
+}
+```
+**minmax()** function returns the bestscore for each move
+- The input of the function of is **"current state"** of the tictactoe game and **"boolean value(**True** or **False**)"** of the current player i.e is the player trying to maximize the score or minimize the score?
+
+
+
+## Example of Tic-Tac-Toe Game Tree
 <p align = "center">
 <img width="1049" alt="Screenshot 2022-04-08 at 1 57 15 PM" src="https://user-images.githubusercontent.com/54971204/162401439-5537ffab-701e-4676-ad58-98e00af14f79.png">
- </p>
+</p>
 
 
 
